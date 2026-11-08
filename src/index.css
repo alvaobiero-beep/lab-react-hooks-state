@@ -53,7 +53,40 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.app {
+  min-height: 100vh;
+  padding: 30px;
+  transition: 0.3s;
+}
 
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button,
+select {
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
